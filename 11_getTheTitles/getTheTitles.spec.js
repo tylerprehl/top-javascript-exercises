@@ -3,16 +3,16 @@ const getTheTitles = require('./getTheTitles')
 describe('getTheTitles', () => {
     const books = [
       {
-        title: 'Book',
-        author: 'Name'
+        title: 'Percy Jackson and the Lightning Thief',
+        author: 'Rick Rioridan'
       },
       {
-        title: 'Book2',
-        author: 'Name2'
+        title: 'Harry Potter and the Sorceror\'s Stone',
+        author: 'J. K. Rowling'
       }
     ]
 
   test('gets titles', () => {
-    expect(getTheTitles(books)).toEqual(['Book','Book2']);
+    expect(getTheTitles(books)).toEqual(['Percy Jackson and the Lightning Thief','Harry Potter and the Sorceror\'s Stone']);
   });
 });
